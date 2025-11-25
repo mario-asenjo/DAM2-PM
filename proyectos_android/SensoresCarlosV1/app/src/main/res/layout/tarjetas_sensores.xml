@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_de_sensores_string"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitulo_string"
+        android:textSize="14sp"
+        android:paddingBottom="16dp" />
+
+    <!-- Tarjeta Acelerómetro -->
+    <LinearLayout
+        android:id="@+id/accelerometer_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="#22FFFFFF"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/accelerometer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acelerometro_name_string"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/accelerometer_values"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/acelerometro_values_string_formated"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Orientación estimada del móvil -->
+        <TextView
+            android:id="@+id/orientation_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orientacion_info_string"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Tarjeta Sensor de Luz -->
+    <LinearLayout
+        android:id="@+id/light_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#22FFFFFF"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/light_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sensor_de_luz_name_string"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/light_sensor_values"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/luz_values_string_formated"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <!-- TextView para mostrar los valores del acelerómetro -->
+    <TextView
+        android:id="@+id/accelerometer_values"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accelerometter_values_string"
+        android:textSize="18sp"
+        android:paddingBottom="16dp" />
+
+    <!-- TextView para mostrar los valores del sensor de luz -->
+    <TextView
+        android:id="@+id/light_sensor_values"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/light_values_string"
+        android:textSize="18sp"
+        android:paddingBottom="16dp" />
+</LinearLayout>
